@@ -19,7 +19,8 @@ import pnp from "sp-pnp-js";
 
 import { ConfigurationService, ItemsService, MockItemsService } from "./app/shared/services";
 import { AppRoutes } from './app';
-import { HomeComponent } from './app/home';
+import { CustomersComponent } from './app/customers';
+import { CustomerDetailComponent } from './app/customer-detail';
 import { ListComponent } from './app/list';
 
 export default class BasicAngularWebPart extends BaseAngularWebPart<IBasicAngularWebPartProps> {
@@ -28,8 +29,9 @@ export default class BasicAngularWebPart extends BaseAngularWebPart<IBasicAngula
 
   protected get appDeclarationTypes(): any[] {
     return [
-      HomeComponent,
-      ListComponent
+      CustomersComponent,
+      ListComponent,
+      CustomerDetailComponent
     ];
   }
   

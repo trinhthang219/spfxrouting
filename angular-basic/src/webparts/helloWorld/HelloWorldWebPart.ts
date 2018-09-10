@@ -6,7 +6,7 @@ import {
 } from '@microsoft/sp-webpart-base';
 import { escape } from '@microsoft/sp-lodash-subset';
 
-import styles from './HelloWorldWebPart.module.scss';
+import styles from  './HelloWorldWebPart.module.scss';
 import * as strings from 'HelloWorldWebPartStrings';
 import { BaseAngularWebPart } from '../../core/webparts/base-angular.webpart';
 import { HomeComponent } from './app/home/home.component';
