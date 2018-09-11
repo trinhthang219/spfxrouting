@@ -15,14 +15,14 @@ export class CustomerServices {
       }
     constructor(private http: Http) { }
 
-    getAllCustomers(): Promise<Customer[]> {
+    public getAllCustomers(): Promise<Customer[]> {
       return this.http.get(this.customerApiUrl)
                  .toPromise()
                  .then(response => response.json() as Customer[])
                  .catch(this.handleError);
     }
 
-    getCustomer(id: number): Promise<Customer> {
+    public getCustomer(id: number): Promise<Customer> {
         const url = `${this.customerApiUrl}/${id}`;
         return this.http.get(url)
           .toPromise()

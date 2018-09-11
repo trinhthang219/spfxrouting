@@ -1,10 +1,10 @@
 export class Customer {
-    id: number;
-    name: string;
-    CompanyName:string;
-    ContactName: string;
-    Address: string;
-    City:string;
-    PostCode: string;
-    Id: number
+    public id: number;
+    public name: string;
+    public CompanyName:string;
+    public ContactName: string;
+    public Address: string;
+    public City:string;
+    public PostCode: string;
+    public Id: number;
   }

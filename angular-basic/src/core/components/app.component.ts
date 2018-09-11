@@ -4,8 +4,7 @@ export class AppComponent {
   public static getComponent(selectorId: string): any {
     return Component({
       selector: `angular-${selectorId}`,
-      template: `
-      <nav>
+      template: `<nav>
       <a routerLink="/customer" routerLinkActive="active">customer</a>
       <a routerLink="/customerdetail" routerLinkActive="active">customerdetail</a>
       </nav>
